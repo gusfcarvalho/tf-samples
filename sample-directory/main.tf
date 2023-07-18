@@ -12,7 +12,7 @@ resource "azurerm_mssql_server" "example" {
   administrator_login_password = "thisIsKat11"
   
   # MIN TLS Version has to be 1.2
-  # minimum_tls_version          = "1.2"
+  minimum_tls_version          = "1.2"
 
   # No Public Access to SQL Server 
   public_network_access_enabled = "false"
